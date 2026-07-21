@@ -552,8 +552,8 @@ a {
   grid-template-columns: 1fr auto;
   gap: 13px 10px;
   min-width: 0;
-  min-height: 150px;
-  padding: 17px;
+  min-height: 172px;
+  padding: 20px;
   background: #fffaf2;
   border: 1px solid #ecdccf;
   border-radius: 16px;
@@ -562,7 +562,7 @@ a {
 .featured-honors-grid time {
   color: #85581f;
   font-family: "Source Sans 3 Variable", "Segoe UI", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 800;
 }
 
@@ -575,8 +575,9 @@ a {
   grid-column: 1 / -1;
   align-self: end;
   margin: 0;
-  font-size: 0.78rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.42;
+  letter-spacing: -0.01em;
 }
 
 .featured-honors-link {
@@ -690,7 +691,7 @@ a {
 .founder-note p {
   margin: 8px 0 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.96rem;
 }
 
 .founder-note .company-name {
@@ -741,7 +742,7 @@ a {
 
 .education-timeline h3 {
   margin: 6px 0 4px;
-  font-size: 1rem;
+  font-size: 1.06rem;
   line-height: 1.45;
 }
 
@@ -749,7 +750,7 @@ a {
 .education-timeline small {
   margin: 0;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.9rem;
 }
 
 .team-card {
@@ -780,8 +781,10 @@ a {
 
 .research-card {
   position: relative;
-  min-height: 340px;
-  padding: 28px;
+  display: flex;
+  min-height: 380px;
+  padding: 30px;
+  flex-direction: column;
   overflow: hidden;
   background: rgba(255, 254, 252, 0.9);
   border: 1px solid #e7ddd8;
@@ -817,7 +820,7 @@ a {
   display: grid;
   width: 56px;
   height: 56px;
-  margin: 38px 0 24px;
+  margin: 32px 0 22px;
   place-items: center;
   background: var(--sky-soft);
   border-radius: 17px;
@@ -827,14 +830,15 @@ a {
 .research-card h3 {
   margin: 0 0 12px;
   font-family: "Newsreader Variable", "PingFang SC", "Microsoft YaHei", Georgia, serif;
-  font-size: 1.25rem;
-  line-height: 1.25;
+  font-size: 1.38rem;
+  line-height: 1.22;
 }
 
 .research-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.94rem;
+  line-height: 1.58;
 }
 
 .accent-card {
@@ -853,22 +857,21 @@ a {
 }
 
 .tag-row {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  right: 28px;
-  bottom: 25px;
-  left: 28px;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-top: auto;
+  padding-top: 24px;
 }
 
 .tag-row span {
-  padding: 5px 8px;
+  padding: 6px 9px;
   color: var(--cyan-dark);
   background: #ebf9fc;
   border-radius: 7px;
-  font-size: 0.67rem;
+  font-size: 0.74rem;
   font-weight: 800;
 }
 
