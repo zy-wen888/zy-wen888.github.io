@@ -3,6 +3,48 @@
 const PUBLICATIONS = [
   {
     year: 2026,
+    title: 'RFLM: An RF Language Model for Instruction-Conditioned RF Processing',
+    authors: ['Zhongyi Wen', 'Changjian Yang', 'Hongyang Zhang', 'Yatong Wang', 'Huaizong Shao', 'Shafei Wang'],
+    role: 'first',
+    venue: 'IEEE Transactions on Mobile Computing',
+    detail: 'Accepted, July 2026',
+    link: 'https://huggingface.co/collections/zywen/rflm-dataset',
+    linkType: 'project',
+    statusKey: 'statusAcceptedTmc',
+    tags: ['RF Language Model', 'Instruction-conditioned RF', 'Edge LLM']
+  },
+  {
+    year: 2026,
+    title: 'On the Shoulders of Giants: Knowledge-Driven Self-Adaptive Network for Distillation',
+    authors: ['Kaicong Yu', 'Zhongyi Wen', 'Yi Fang', 'Jingran Lin', 'Kai Xie', 'Jian Yang'],
+    role: 'coauthor',
+    venue: 'ICASSP 2026 — IEEE International Conference on Acoustics, Speech and Signal Processing',
+    detail: 'pp. 4721–4725',
+    doi: 'https://doi.org/10.1109/ICASSP55912.2026.11460459',
+    tags: ['Knowledge Distillation', 'Adaptive Network', 'ICASSP']
+  },
+  {
+    year: 2026,
+    title: 'RLSW: Reinforcement Learning-Guided Sample Weighting for Dynamic Early-Exiting Networks',
+    authors: ['Kaicong Yu', 'Zhongyi Wen', 'Yi Fang', 'Kai Xie', 'Jian Yang'],
+    role: 'coauthor',
+    venue: 'ICASSP 2026 — IEEE International Conference on Acoustics, Speech and Signal Processing',
+    detail: 'pp. 2336–2340',
+    doi: 'https://doi.org/10.1109/ICASSP55912.2026.11464187',
+    tags: ['Reinforcement Learning', 'Dynamic Early Exit', 'ICASSP']
+  },
+  {
+    year: 2026,
+    title: 'Radar Signal Reconstruction in Severe Interference via Robust Tensor Completion',
+    authors: ['Chang Zhu', 'Kui Xiong', 'Yutao Xiang', 'Zhongyi Wen', 'Wei Zhang', 'Huaizong Shao'],
+    role: 'coauthor',
+    venue: 'IEEE Transactions on Signal Processing',
+    detail: 'vol. 74, pp. 1233–1248',
+    doi: 'https://doi.org/10.1109/TSP.2026.3665693',
+    tags: ['Radar Reconstruction', 'Tensor Completion', 'Interference Mitigation']
+  },
+  {
+    year: 2026,
     title: 'Pretrained Foundation Model-Driven Source-Free Unsupervised Domain Adaptation for IoT Physical-Layer Authentication',
     authors: ['Zhongyi Wen', 'Yatong Wang', 'Qiang Li', 'Huaizong Shao'],
     role: 'first',
@@ -53,6 +95,16 @@ const PUBLICATIONS = [
   },
   {
     year: 2025,
+    title: 'Cross-Receiver Radio Frequency Fingerprint Identification: A Source-Free Adaptation Approach',
+    authors: ['Jian Yang', 'Shaoxian Zhu', 'Zhongyi Wen', 'Qiang Li'],
+    role: 'coauthor',
+    venue: 'Sensors',
+    detail: 'vol. 25, no. 14, article 4451',
+    doi: 'https://doi.org/10.3390/S25144451',
+    tags: ['Cross-receiver RFFI', 'Source-free Adaptation', 'RF Fingerprinting']
+  },
+  {
+    year: 2025,
     title: 'Domain Adaptation-Based Radio Frequency Fingerprint Identification for Industrial Cyber-Physical Systems',
     authors: ['Yatong Wang', 'Bin Cao', 'Zhongyi Wen', 'Mu Yan', 'Changqing Song'],
     role: 'corresponding',
@@ -80,6 +132,16 @@ const PUBLICATIONS = [
     detail: 'vol. 21, no. 2, pp. 1038–1047',
     doi: 'https://doi.org/10.1109/TII.2024.3448500',
     tags: ['Dynamic Inference', 'Early Exit', 'Edge AI']
+  },
+  {
+    year: 2024,
+    title: 'A Zynq-Based Platform With Conditional-Reconfigurable Complex-Valued Neural Network for Specific Emitter Identification',
+    authors: ['Jiayan Gan', 'Qiang Li', 'Huaizong Shao', 'Zhongyi Wen', 'Tao Yang', 'Ye Pan', 'Guomin Sun'],
+    role: 'coauthor',
+    venue: 'IEEE Transactions on Instrumentation and Measurement',
+    detail: 'vol. 73, pp. 1–11',
+    doi: 'https://doi.org/10.1109/TIM.2024.3391818',
+    tags: ['Zynq', 'Complex-valued NN', 'Specific Emitter Identification']
   },
   {
     year: 2024,
@@ -147,7 +209,7 @@ const TRANSLATIONS = {
     heroKicker: 'HELLO, PHYSICAL WORLD 👋',
     heroAcademicRole: 'Ph.D. Candidate at UESTC',
     heroCompanyRole: 'Founder & CEO, Hansoric Intelligence Technology',
-    heroLede: 'I build edge-native intelligence for the physical world — bridging trustworthy RF sensing, efficient inference, LLMs, MLLMs, and autonomous wireless cognitive agents.',
+    heroLede: 'I build edge-native intelligence for the physical world — from RFLM and trustworthy RF sensing to efficient inference, while advancing toward MLLMs and autonomous wireless cognitive agents.',
     topicRf: 'RF Intelligence',
     topicLlm: 'Edge LLMs',
     topicMllm: 'MLLMs',
@@ -160,6 +222,9 @@ const TRANSLATIONS = {
     statFirstAuthor: 'first-author papers',
     statHonors: 'academic honors',
     statPlatform: 'edge RF platform',
+    featuredHonorsLabel: 'FEATURED HONORS',
+    featuredHonorsTitle: 'Selected recognition in research and innovation.',
+    viewAllHonors: 'View all honors',
     aboutEyebrow: 'About',
     aboutTitle: 'Researcher, builder, and founder.',
     aboutLead: 'My work starts with radio-frequency signals — one of the richest, most immediate interfaces between artificial intelligence and the physical world.',
@@ -186,7 +251,7 @@ const TRANSLATIONS = {
     edgeTitle: 'Efficient Edge Deployment',
     edgeBody: 'Dynamic inference, early exits, FPGA preprocessing, and GPU acceleration under real constraints.',
     agentTitle: 'Edge LLMs, MLLMs & Agents',
-    agentBody: 'An emerging direction: unifying RF signals, spectrum imagery, and language for reasoning and action.',
+    agentBody: 'RFLM establishes instruction-conditioned RF processing; MLLMs and closed-loop agents are the next frontier.',
     arcLabel: 'RESEARCH ARC',
     arcTitle: 'One continuous path from sensing to agency.',
     arcInput: 'Multi-source RF input',
@@ -195,6 +260,7 @@ const TRANSLATIONS = {
     arcDeploy: 'Edge-efficient deployment',
     arcReason: 'Multimodal reasoning',
     arcDecide: 'Closed-loop decisions',
+    rflmSummary: 'An RF language model for instruction-conditioned RF processing, accepted at IEEE TMC.',
     rfMaeSummary: 'Self-supervised RF foundation representations with adaptive frequency masking.',
     gcodwfaSummary: 'Gradient collaboration and dynamic alignment for cross-domain RFFI.',
     swiftNetSummary: 'Cost-efficient dynamic inference for resource-constrained deployment.',
@@ -214,6 +280,8 @@ const TRANSLATIONS = {
     heterogeneous: 'Heterogeneous compute',
     honorsEyebrow: 'Honors',
     honorsTitle: 'Recognition along the way.',
+    awardCieNomination: '2025 Chinese Institute of Electronics Nomination Award for the Top Ten Advances in Electromagnetic Spectrum',
+    awardNomination: 'Scientific and technological advance nomination',
     awardRisingStar: 'UESTC Academic Rising Star Award',
     awardAcademic: 'Academic recognition',
     awardSeedling: 'UESTC Academic Seedling Award',
@@ -229,11 +297,15 @@ const TRANSLATIONS = {
     firstAuthor: 'First author',
     correspondingAuthor: 'Corresponding author',
     coAuthor: 'Co-author',
+    statusAcceptedTmc: 'New · Accepted at IEEE TMC',
+    doiLabel: 'DOI',
+    projectLabel: 'Project',
     openDoi: 'Open DOI for',
+    openProject: 'Open project page for',
     languageAria: 'Switch to Chinese',
     backToTop: 'Back to top',
     pageTitle: 'Zhongyi Wen — Edge RF Intelligence',
-    pageDescription: 'Zhongyi Wen is a Ph.D. Candidate at UESTC and Founder & CEO of Hansoric Intelligence Technology, working on RF intelligence, edge LLMs, MLLMs, and wireless cognitive agents.'
+    pageDescription: 'Zhongyi Wen is a Ph.D. Candidate at UESTC and Founder & CEO of Hansoric Intelligence Technology, researching RFLM, RF intelligence, edge LLMs, MLLMs, and wireless cognitive agents.'
   },
   zh: {
     skipLink: '跳到主要内容',
@@ -248,7 +320,7 @@ const TRANSLATIONS = {
     heroKicker: '你好，物理世界 👋',
     heroAcademicRole: '电子科技大学博士候选人',
     heroCompanyRole: 'Hansoric Intelligence Technology 创始人兼 CEO',
-    heroLede: '面向真实物理世界构建边缘原生智能：融合可信射频感知、高效推理、LLM、MLLM 与自主无线认知智能体。',
+    heroLede: '面向真实物理世界构建边缘原生智能：以已获 IEEE TMC 接收的 RFLM、可信射频感知与高效推理为基础，进一步探索 MLLM 与自主无线认知智能体。',
     topicRf: '射频智能',
     topicLlm: '边缘大模型',
     topicMllm: '多模态大模型',
@@ -261,6 +333,9 @@ const TRANSLATIONS = {
     statFirstAuthor: '篇第一作者论文',
     statHonors: '项学术荣誉',
     statPlatform: '套射频边缘平台',
+    featuredHonorsLabel: '精选荣誉',
+    featuredHonorsTitle: '研究与创新道路上的代表性认可。',
+    viewAllHonors: '查看全部荣誉',
     aboutEyebrow: '关于我',
     aboutTitle: '研究者、工程实践者与创业者。',
     aboutLead: '我的研究始于射频信号——它是人工智能连接真实物理世界最丰富、最即时的接口之一。',
@@ -287,7 +362,7 @@ const TRANSLATIONS = {
     edgeTitle: '边缘高效部署',
     edgeBody: '动态推理、早退机制、FPGA 预处理与 GPU 边缘加速。',
     agentTitle: '边缘 LLM、MLLM 与智能体',
-    agentBody: '当前重点方向：统一射频信号、频谱图像与自然语言，实现推理与行动。',
+    agentBody: 'RFLM 已建立指令驱动的射频处理范式；MLLM 与闭环智能体是当前持续探索的前沿方向。',
     arcLabel: '研究演进',
     arcTitle: '从感知到智能体的一条连续路径。',
     arcInput: '多源射频输入',
@@ -296,6 +371,7 @@ const TRANSLATIONS = {
     arcDeploy: '边缘高效部署',
     arcReason: '多模态推理',
     arcDecide: '闭环自主决策',
+    rflmSummary: '面向指令驱动射频处理的射频语言模型，已获 IEEE TMC 接收。',
     rfMaeSummary: '采用自适应频域掩码学习可迁移的射频自监督基础表征。',
     gcodwfaSummary: '通过梯度协同和动态对齐解决跨域射频指纹识别。',
     swiftNetSummary: '面向资源受限部署的低成本动态推理框架。',
@@ -315,6 +391,8 @@ const TRANSLATIONS = {
     heterogeneous: '异构计算',
     honorsEyebrow: '荣誉奖项',
     honorsTitle: '研究道路上的认可。',
+    awardCieNomination: '中国电子学会2025年度电磁频谱领域十大科技进展提名奖',
+    awardNomination: '科技进展提名荣誉',
     awardRisingStar: '电子科技大学学术新秀奖',
     awardAcademic: '学术荣誉',
     awardSeedling: '电子科技大学学术青苗奖',
@@ -330,11 +408,15 @@ const TRANSLATIONS = {
     firstAuthor: '第一作者',
     correspondingAuthor: '通讯作者',
     coAuthor: '合作作者',
+    statusAcceptedTmc: '最新 · 已获 IEEE TMC 接收',
+    doiLabel: 'DOI',
+    projectLabel: '项目主页',
     openDoi: '打开论文 DOI：',
+    openProject: '打开项目主页：',
     languageAria: 'Switch to English',
     backToTop: '返回顶部',
     pageTitle: '文钟毅 — 边缘射频智能',
-    pageDescription: '文钟毅，电子科技大学博士候选人、Hansoric Intelligence Technology 创始人兼 CEO，研究射频智能、边缘 LLM、MLLM 与无线认知智能体。'
+    pageDescription: '文钟毅，电子科技大学博士候选人、Hansoric Intelligence Technology 创始人兼 CEO，研究 RFLM、射频智能、边缘 LLM、MLLM 与无线认知智能体。'
   }
 };
 
@@ -371,6 +453,7 @@ function renderPublications() {
   const list = document.getElementById('publication-list');
   if (!list) return;
   list.replaceChildren();
+  const words = TRANSLATIONS[state.language];
 
   const grouped = PUBLICATIONS.reduce(function (accumulator, publication) {
     if (!accumulator[publication.year]) accumulator[publication.year] = [];
@@ -392,6 +475,9 @@ function renderPublications() {
       const meta = element('div', 'publication-meta');
       const role = element('span', 'role-pill role-' + publication.role, roleLabel(publication.role));
       meta.appendChild(role);
+      if (publication.statusKey && words[publication.statusKey]) {
+        meta.appendChild(element('span', 'publication-status', words[publication.statusKey]));
+      }
       publication.tags.forEach(function (tag) {
         meta.appendChild(element('span', 'paper-tag', tag));
       });
@@ -409,17 +495,18 @@ function renderPublications() {
       main.appendChild(authors);
       main.appendChild(venue);
 
-      const doiLink = element('a', 'doi-button');
-      doiLink.href = publication.doi;
-      doiLink.target = '_blank';
-      doiLink.rel = 'noopener noreferrer';
-      doiLink.setAttribute('aria-label', TRANSLATIONS[state.language].openDoi + ' ' + publication.title);
-      doiLink.appendChild(document.createTextNode('DOI'));
-      doiLink.appendChild(element('span', '', '↗'));
-      doiLink.lastElementChild.setAttribute('aria-hidden', 'true');
+      const isProject = publication.linkType === 'project';
+      const publicationLink = element('a', 'doi-button');
+      publicationLink.href = publication.link || publication.doi;
+      publicationLink.target = '_blank';
+      publicationLink.rel = 'noopener noreferrer';
+      publicationLink.setAttribute('aria-label', (isProject ? words.openProject : words.openDoi) + ' ' + publication.title);
+      publicationLink.appendChild(document.createTextNode(isProject ? words.projectLabel : words.doiLabel));
+      publicationLink.appendChild(element('span', '', '↗'));
+      publicationLink.lastElementChild.setAttribute('aria-hidden', 'true');
 
       article.appendChild(main);
-      article.appendChild(doiLink);
+      article.appendChild(publicationLink);
       items.appendChild(article);
     });
 
