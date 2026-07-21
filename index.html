@@ -10,7 +10,8 @@
     >
     <meta name="author" content="Zhongyi Wen">
     <link rel="canonical" href="https://zy-wen888.github.io/">
-    <link rel="icon" href="assets/zhongyi-wen-portrait.png" type="image/png">
+    <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
     <link rel="preload" href="assets/fonts/newsreader-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/source-sans-3-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
     <meta property="og:type" content="website">
@@ -22,10 +23,11 @@
     >
     <meta
       property="og:image"
-      content="https://zy-wen888.github.io/assets/og-homepage.png"
+      content="https://zy-wen888.github.io/assets/og-homepage.jpg"
     >
-    <meta property="og:image:width" content="1731">
-    <meta property="og:image:height" content="909">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="zh_CN">
     <meta name="twitter:card" content="summary_large_image">
@@ -36,7 +38,7 @@
     >
     <meta
       name="twitter:image"
-      content="https://zy-wen888.github.io/assets/og-homepage.png"
+      content="https://zy-wen888.github.io/assets/og-homepage.jpg"
     >
     <title>Zhongyi Wen — Edge RF Intelligence</title>
     <link rel="stylesheet" href="styles.css">
@@ -82,11 +84,11 @@
     <a class="skip-link" href="#main" data-i18n="skipLink">Skip to main content</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Zhongyi Wen home">
+      <a class="brand" href="#top" aria-label="Zhongyi Wen home" data-i18n-aria-label="brandHome">
         <span class="brand-mark" aria-hidden="true">ZW⌁</span>
         <span class="brand-status"><i></i><span data-i18n="brandStatus">Open to collaboration</span></span>
       </a>
-      <nav aria-label="Primary navigation">
+      <nav id="primary-navigation" aria-label="Primary navigation" data-primary-navigation data-i18n-aria-label="primaryNavigation">
         <a href="#about"><span aria-hidden="true">👋</span><span data-i18n="navAbout">About</span></a>
         <a href="#research"><span aria-hidden="true">🧠</span><span data-i18n="navResearch">Research</span></a>
         <a href="#publications"><span aria-hidden="true">📚</span><span data-i18n="navPublications">Publications</span></a>
@@ -94,10 +96,23 @@
         <a href="#honors"><span aria-hidden="true">🏆</span><span data-i18n="navHonors">Honors</span></a>
         <a href="#contact"><span aria-hidden="true">✉️</span><span data-i18n="navContact">Contact</span></a>
       </nav>
-      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese">
-        <span aria-hidden="true">🌐</span>
-        <span data-language-label>中文</span>
-      </button>
+      <div class="header-actions">
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          hidden
+        >
+          <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+          <span class="sr-only" data-nav-toggle-label>Open navigation</span>
+        </button>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese">
+          <span aria-hidden="true">🌐</span>
+          <span data-language-label>中文</span>
+        </button>
+      </div>
     </header>
 
     <main id="main">
@@ -109,7 +124,7 @@
           <div class="hero-copy reveal">
             <p class="hero-badge">
               <span class="signal-dot" aria-hidden="true"></span>
-              <span data-i18n="heroBadge">RF intelligence · LLMs / MLLMs · Efficient AI</span>
+              <span data-i18n="heroBadge">LLMs · MLLMs · Agent Systems · Efficient AI</span>
             </p>
             <p class="hero-kicker" data-i18n="heroKicker">Hi, I’m Zhongyi 👋</p>
             <h1 id="hero-title">
@@ -122,16 +137,17 @@
               <strong data-i18n="heroCompanyRole">Founder &amp; CEO, Hansoric Intelligence Technology</strong>
             </p>
             <p class="hero-lede" data-i18n="heroLede">
-              I study how AI can understand wireless signals and run efficiently at the edge. My work brings
-              together RF representation learning, LLMs and MLLMs, parameter-efficient fine-tuning, and efficient inference.
+              I study artificial intelligence, with a focus on LLMs, MLLMs, and agent systems. I develop methods for
+              efficient adaptation, multimodal reasoning, edge inference, and autonomous decision-making, and explore
+              how these models can understand RF signals and operate reliably in real-world environments.
             </p>
             <ul class="topic-ribbon">
-              <li>📡 <span data-i18n="topicRf">RF Intelligence</span></li>
               <li>🧠 <span data-i18n="topicLlm">LLMs</span></li>
               <li>👁️ <span data-i18n="topicMllm">MLLMs</span></li>
+              <li>🤖 <span data-i18n="topicAgents">Agent Systems</span></li>
               <li>🪄 <span data-i18n="topicPeft">PEFT</span></li>
-              <li>🤖 <span data-i18n="topicAgents">Agents</span></li>
               <li>⚡ <span data-i18n="topicInference">Efficient Inference</span></li>
+              <li>📡 <span data-i18n="topicRf">RF Intelligence</span></li>
             </ul>
             <div class="hero-actions">
               <a class="button button-primary" href="#research">
@@ -145,18 +161,26 @@
 
           <div class="hero-visual reveal">
             <figure class="portrait-frame">
-              <img
-                src="assets/zhongyi-wen-portrait.png"
-                alt="Portrait of Zhongyi Wen"
-                width="1254"
-                height="1254"
-                fetchpriority="high"
-              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="assets/zhongyi-wen-portrait-480.webp 480w, assets/zhongyi-wen-portrait-960.webp 960w"
+                  sizes="(max-width: 820px) min(82vw, 350px), 360px"
+                >
+                <img
+                  src="assets/zhongyi-wen-portrait.png"
+                  alt="Portrait of Zhongyi Wen"
+                  data-i18n-alt="portraitAlt"
+                  width="1254"
+                  height="1254"
+                  fetchpriority="high"
+                >
+              </picture>
             </figure>
           </div>
         </div>
 
-        <div class="container stat-strip reveal" role="group" aria-label="Academic highlights">
+        <div class="container stat-strip reveal" role="group" aria-label="Academic highlights" data-i18n-aria-label="academicHighlights">
           <div><strong>19</strong><span data-i18n="statWorks">verified research works</span></div>
           <div><strong>8</strong><span data-i18n="statFirstAuthor">first-author papers</span></div>
           <div><strong>6</strong><span data-i18n="statHonors">academic honors</span></div>
@@ -189,12 +213,13 @@
           <div class="about-layout">
             <article class="about-story reveal">
               <p class="lead" data-i18n="aboutLead">
-                I work at the intersection of wireless signal processing and AI methodology.
+                I am an AI researcher focused on large language models, multimodal large language models, and intelligent agent systems.
               </p>
               <p data-i18n="aboutBody">
-                I study how foundation models can learn from RF signals, adapt with a small number of trainable
-                parameters, and reason across signal, text, and other modalities. My methods include representation
-                learning, PEFT, dynamic inference, and edge acceleration for LLMs, MLLMs, and wireless agents.
+                My work studies how foundation models learn, adapt, reason, and act across language, vision, signals,
+                and physical environments. I work on parameter-efficient fine-tuning, multimodal alignment, efficient
+                inference, and closed-loop agents, with RF and wireless systems serving as an important domain for
+                grounding, evaluation, and edge deployment.
               </p>
               <div class="founder-note">
                 <span class="founder-emoji" aria-hidden="true">🚀</span>
@@ -327,7 +352,8 @@
               <span>ORCID</span><strong>0000-0003-4999-3982</strong><span aria-hidden="true">↗</span>
             </a>
           </div>
-          <div id="publication-list" class="publication-list" aria-live="polite"></div>
+          <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-publication-status></p>
+          <div id="publication-list" class="publication-list"></div>
           <noscript>
             <p class="noscript-note">JavaScript is required for the bilingual publication list. Visit the verified ORCID profile above for the complete record.</p>
           </noscript>
@@ -344,14 +370,22 @@
           </div>
           <div class="system-layout">
             <figure class="system-image reveal">
-              <img
-                src="assets/spectraedge-sdr.png"
-                alt="SpectraEdge SDR hardware showing the ADRV9009, ZU19EG FPGA, and Jetson Orin NX"
-                width="1711"
-                height="1466"
-                loading="lazy"
-                decoding="async"
-              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="assets/spectraedge-sdr-768.webp 768w, assets/spectraedge-sdr-1440.webp 1440w"
+                  sizes="(max-width: 820px) calc(100vw - 40px), 660px"
+                >
+                <img
+                  src="assets/spectraedge-sdr.png"
+                  alt="SpectraEdge SDR hardware showing the ADRV9009, ZU19EG FPGA, and Jetson Orin NX"
+                  data-i18n-alt="systemImageAlt"
+                  width="1711"
+                  height="1466"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
               <figcaption><span aria-hidden="true">🔬</span><span data-i18n="hardwareCaption">Working prototype · Real hardware</span></figcaption>
             </figure>
             <div class="system-copy reveal">
@@ -363,7 +397,7 @@
                 <li><span>02</span><div><strong>ZU19EG FPGA</strong><p data-i18n="hardwareFpga">Real-time STFT, feature extraction, and preprocessing</p></div></li>
                 <li><span>03</span><div><strong>Jetson Orin NX</strong><p data-i18n="hardwareGpu">Edge-side deep learning and intelligent inference</p></div></li>
               </ol>
-              <div class="pipeline" role="group" aria-label="SpectraEdge processing pipeline">
+              <div class="pipeline" role="group" aria-label="SpectraEdge processing pipeline" data-i18n-aria-label="processingPipeline">
                 <span>RF Signal</span><i>→</i><span>ADRV9009</span><i>→</i><span>FPGA</span><i>→</i><span>Orin NX</span><i>→</i><span>AI Result</span>
               </div>
               <div class="system-tags">

@@ -199,26 +199,32 @@ const TRANSLATIONS = {
   en: {
     skipLink: 'Skip to main content',
     brandStatus: 'Open to research and collaboration',
+    brandHome: 'Zhongyi Wen home',
+    primaryNavigation: 'Primary navigation',
+    navOpen: 'Open navigation',
+    navClose: 'Close navigation',
     navAbout: 'About',
     navResearch: 'Research',
     navPublications: 'Publications',
     navSystems: 'Systems',
     navHonors: 'Honors',
     navContact: 'Contact',
-    heroBadge: 'RF intelligence · LLMs / MLLMs · Efficient AI',
+    heroBadge: 'LLMs · MLLMs · Agent Systems · Efficient AI',
     heroKicker: 'Hi, I’m Zhongyi 👋',
     heroAcademicRole: 'Ph.D. Candidate at UESTC',
     heroCompanyRole: 'Founder & CEO, Hansoric Intelligence Technology',
-    heroLede: 'I study how AI can understand wireless signals and run efficiently at the edge. My work brings together RF representation learning, LLMs and MLLMs, parameter-efficient fine-tuning, and efficient inference.',
+    heroLede: 'I study artificial intelligence, with a focus on LLMs, MLLMs, and agent systems. I develop methods for efficient adaptation, multimodal reasoning, edge inference, and autonomous decision-making, and explore how these models can understand RF signals and operate reliably in real-world environments.',
     topicRf: 'RF Intelligence',
     topicLlm: 'LLMs',
     topicMllm: 'MLLMs',
     topicPeft: 'PEFT',
-    topicAgents: 'Agents',
+    topicAgents: 'Agent Systems',
     topicInference: 'Efficient Inference',
     exploreResearch: 'Explore my research',
     startConversation: 'Get in touch',
     portraitCaption: 'Researching the intelligence beyond connectivity',
+    portraitAlt: 'Portrait of Zhongyi Wen',
+    academicHighlights: 'Academic highlights',
     statWorks: 'verified research works',
     statFirstAuthor: 'first-author papers',
     statHonors: 'academic honors',
@@ -228,8 +234,8 @@ const TRANSLATIONS = {
     viewAllHonors: 'View all honors',
     aboutEyebrow: 'About',
     aboutTitle: 'A little about me.',
-    aboutLead: 'I work at the intersection of wireless signal processing and AI methodology.',
-    aboutBody: 'I study how foundation models can learn from RF signals, adapt with a small number of trainable parameters, and reason across signal, text, and other modalities. My methods include representation learning, PEFT, dynamic inference, and edge acceleration for LLMs, MLLMs, and wireless agents.',
+    aboutLead: 'I am an AI researcher focused on large language models, multimodal large language models, and intelligent agent systems.',
+    aboutBody: 'My work studies how foundation models learn, adapt, reason, and act across language, vision, signals, and physical environments. I work on parameter-efficient fine-tuning, multimodal alignment, efficient inference, and closed-loop agents, with RF and wireless systems serving as an important domain for grounding, evaluation, and edge deployment.',
     founderLabel: 'COMPANY',
     founderTitle: 'Founder & CEO',
     companyName: 'Hansoric Intelligence Technology Co., Ltd.',
@@ -269,10 +275,13 @@ const TRANSLATIONS = {
     publicationsEyebrow: 'Publications',
     publicationsTitle: 'Publications and accepted work.',
     publicationsIntro: 'The list below includes my formally published or accepted work, with a public link for each item.',
+    publicationStatus: '{count} publications are displayed.',
     systemsEyebrow: 'Practical systems',
     systemsTitle: 'SpectraEdge SDR',
     systemsIntro: 'A working RF edge-AI prototype built around ADRV9009, ZU19EG FPGA, and Jetson Orin NX.',
     hardwareCaption: 'Working prototype · Real hardware',
+    systemImageAlt: 'SpectraEdge SDR hardware showing the ADRV9009, ZU19EG FPGA, and Jetson Orin NX',
+    processingPipeline: 'SpectraEdge processing pipeline',
     systemStatement: 'It connects real RF acquisition, FPGA preprocessing, and edge inference in one system.',
     hardwareRf: 'RF acquisition and digital baseband conversion',
     hardwareFpga: 'Real-time STFT, feature extraction, and preprocessing',
@@ -312,26 +321,32 @@ const TRANSLATIONS = {
   zh: {
     skipLink: '跳到主要内容',
     brandStatus: '欢迎学术交流与合作',
+    brandHome: '文钟毅主页',
+    primaryNavigation: '主导航',
+    navOpen: '打开导航菜单',
+    navClose: '关闭导航菜单',
     navAbout: '关于我',
     navResearch: '研究',
     navPublications: '论文',
     navSystems: '系统',
     navHonors: '荣誉',
     navContact: '联系',
-    heroBadge: '射频智能 · LLM / MLLM · 高效人工智能',
+    heroBadge: '大语言模型 · 多模态大模型 · 智能体系统 · 高效人工智能',
     heroKicker: '你好，我是文钟毅 👋',
     heroAcademicRole: '电子科技大学博士生',
     heroCompanyRole: '瀚铄智擎科技有限公司创始人兼 CEO',
-    heroLede: '我研究如何让 AI 理解无线信号，并以更低成本运行在边缘设备上。具体工作涵盖射频表征学习、LLM / MLLM、参数高效微调（PEFT）与高效推理，目标是构建可部署的无线智能系统。',
+    heroLede: '我主要从事人工智能研究，重点关注大语言模型（LLM）、多模态大模型（MLLM）和智能体系统。围绕模型的高效适配、多模态推理、端侧推理与自主决策开展研究，并探索这些技术在射频、无线和真实物理环境中的理解与部署。',
     topicRf: '射频智能',
     topicLlm: '大语言模型',
     topicMllm: '多模态大模型',
     topicPeft: 'PEFT',
-    topicAgents: '无线认知智能体',
+    topicAgents: '智能体系统',
     topicInference: '高效推理',
     exploreResearch: '了解我的研究',
     startConversation: '联系我',
     portraitCaption: '探索超越连接本身的智能',
+    portraitAlt: '文钟毅的肖像照片',
+    academicHighlights: '学术成果概览',
     statWorks: '项论文与已接收成果',
     statFirstAuthor: '篇第一作者论文',
     statHonors: '项学术荣誉',
@@ -341,8 +356,8 @@ const TRANSLATIONS = {
     viewAllHonors: '查看全部荣誉',
     aboutEyebrow: '关于我',
     aboutTitle: '关于我',
-    aboutLead: '我的研究位于无线信号处理与人工智能方法的交叉地带。',
-    aboutBody: '我关注基础模型如何从射频信号中学习表征、以少量可训练参数适配新任务，并结合信号、文本等多模态信息进行推理。围绕这些问题，我研究表征学习、PEFT、动态推理和边缘加速，并进一步探索 LLM、MLLM 与无线认知智能体。',
+    aboutLead: '我是一名人工智能研究者，核心方向是大语言模型、多模态大模型和智能体系统。',
+    aboutBody: '我关注基础模型如何跨语言、视觉、信号和物理环境进行学习、适配、推理与行动，研究内容包括参数高效微调（PEFT）、多模态对齐、高效推理和闭环智能体。射频与无线系统是我用于模型感知、评测和边缘部署的重要应用场景。',
     founderLabel: '创业',
     founderTitle: '创始人兼 CEO',
     companyName: '瀚铄智擎科技有限公司',
@@ -382,10 +397,13 @@ const TRANSLATIONS = {
     publicationsEyebrow: '学术成果',
     publicationsTitle: '论文与已接收成果',
     publicationsIntro: '下面列出正式发表或已接收的研究工作，并为每一项附上公开链接。',
+    publicationStatus: '当前显示 {count} 项论文与已接收成果。',
     systemsEyebrow: '实物系统',
     systemsTitle: 'SpectraEdge SDR',
     systemsIntro: '一套由 ADRV9009、ZU19EG FPGA 和 Jetson Orin NX 组成的射频边缘智能原型。',
     hardwareCaption: '实物原型 · 真实硬件',
+    systemImageAlt: 'SpectraEdge SDR 实物系统，包括 ADRV9009、ZU19EG FPGA 和 Jetson Orin NX',
+    processingPipeline: 'SpectraEdge 处理流程',
     systemStatement: '它把真实射频采集、FPGA 预处理和端侧推理连接在同一套系统中。',
     hardwareRf: '射频信号采集与数字基带转换',
     hardwareFpga: '实时 STFT、特征提取与低时延预处理',
@@ -417,7 +435,7 @@ const TRANSLATIONS = {
     projectLabel: '项目主页',
     openDoi: '打开论文 DOI：',
     openProject: '打开项目主页：',
-    languageAria: 'Switch to English',
+    languageAria: '切换到英文',
     backToTop: '返回顶部',
     pageTitle: '文钟毅 — 边缘射频智能',
     pageDescription: '文钟毅，电子科技大学博士生、瀚铄智擎科技有限公司创始人兼 CEO，主要研究射频智能、LLM / MLLM、PEFT 与边缘高效推理。'
@@ -466,7 +484,7 @@ function renderPublications() {
   }, {});
 
   Object.keys(grouped).sort(function (a, b) { return Number(b) - Number(a); }).forEach(function (year) {
-    const yearSection = element('section', 'publication-year reveal');
+    const yearSection = element('section', 'publication-year');
     yearSection.setAttribute('aria-labelledby', 'year-' + year);
     const yearHeading = element('h3', '', year);
     yearHeading.id = 'year-' + year;
@@ -518,7 +536,31 @@ function renderPublications() {
     list.appendChild(yearSection);
   });
 
-  observeReveals();
+  const status = document.querySelector('[data-publication-status]');
+  if (status) status.textContent = words.publicationStatus.replace('{count}', String(PUBLICATIONS.length));
+}
+
+function translateAttributes(words) {
+  [
+    ['data-i18n-aria-label', 'aria-label'],
+    ['data-i18n-alt', 'alt']
+  ].forEach(function (mapping) {
+    document.querySelectorAll('[' + mapping[0] + ']').forEach(function (node) {
+      const key = node.getAttribute(mapping[0]);
+      if (Object.prototype.hasOwnProperty.call(words, key)) node.setAttribute(mapping[1], words[key]);
+    });
+  });
+}
+
+function updateNavigationToggleLabel() {
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const label = document.querySelector('[data-nav-toggle-label]');
+  if (!toggle || !label) return;
+  const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+  const words = TRANSLATIONS[state.language];
+  label.textContent = isOpen ? words.navClose : words.navOpen;
+  const icon = toggle.querySelector('.nav-toggle-icon');
+  if (icon) icon.textContent = isOpen ? '×' : '☰';
 }
 
 function applyLanguage(language, updateUrl) {
@@ -530,12 +572,12 @@ function applyLanguage(language, updateUrl) {
     const key = node.getAttribute('data-i18n');
     if (Object.prototype.hasOwnProperty.call(words, key)) node.textContent = words[key];
   });
+  translateAttributes(words);
 
   const toggle = document.querySelector('[data-language-toggle]');
   const toggleLabel = document.querySelector('[data-language-label]');
   if (toggle) {
     toggle.setAttribute('aria-label', words.languageAria);
-    toggle.setAttribute('aria-pressed', String(state.language === 'zh'));
   }
   if (toggleLabel) toggleLabel.textContent = state.language === 'zh' ? 'EN' : '中文';
 
@@ -560,6 +602,7 @@ function applyLanguage(language, updateUrl) {
   }
 
   renderPublications();
+  updateNavigationToggleLabel();
 }
 
 function observeReveals() {
@@ -584,7 +627,7 @@ function initializeRevealObserver() {
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 
   observeReveals();
 }
@@ -609,12 +652,77 @@ function initializeNavigation() {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         navigationLinks.forEach(function (link) {
-          link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+          const isActive = link.getAttribute('href') === '#' + entry.target.id;
+          link.classList.toggle('is-active', isActive);
+          if (isActive) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
         });
       });
     }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
     sections.forEach(function (section) { sectionObserver.observe(section); });
   }
+}
+
+function initializeMobileNavigation() {
+  const header = document.querySelector('[data-header]');
+  const navigation = document.querySelector('[data-primary-navigation]');
+  const toggle = document.querySelector('[data-nav-toggle]');
+  if (!header || !navigation || !toggle) return;
+
+  const mobileQuery = window.matchMedia('(max-width: 1080px)');
+
+  function setOpen(isOpen, returnFocus) {
+    const canOpen = mobileQuery.matches && header.hasAttribute('data-nav-enhanced');
+    const nextOpen = Boolean(isOpen && canOpen);
+    toggle.setAttribute('aria-expanded', String(nextOpen));
+    navigation.hidden = canOpen ? !nextOpen : false;
+    updateNavigationToggleLabel();
+    if (!nextOpen && returnFocus) toggle.focus();
+  }
+
+  function syncMode() {
+    if (mobileQuery.matches) {
+      header.setAttribute('data-nav-enhanced', 'true');
+      toggle.hidden = false;
+      setOpen(false, false);
+    } else {
+      header.removeAttribute('data-nav-enhanced');
+      toggle.hidden = true;
+      navigation.hidden = false;
+      toggle.setAttribute('aria-expanded', 'false');
+      updateNavigationToggleLabel();
+    }
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true', false);
+  });
+
+  navigation.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setOpen(false, true); });
+  });
+
+  document.addEventListener('click', function (event) {
+    if (toggle.getAttribute('aria-expanded') === 'true' && !header.contains(event.target)) setOpen(false, false);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setOpen(false, true);
+  });
+
+  if (typeof mobileQuery.addEventListener === 'function') mobileQuery.addEventListener('change', syncMode);
+  else mobileQuery.addListener(syncMode);
+  syncMode();
+}
+
+function restoreInitialHash() {
+  if (!window.location.hash) return;
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  const target = document.getElementById(id);
+  if (!target) return;
+  target.classList.add('is-visible');
+  target.querySelectorAll('.reveal').forEach(function (node) { node.classList.add('is-visible'); });
+  window.requestAnimationFrame(function () { target.scrollIntoView({ block: 'start' }); });
 }
 
 function detectInitialLanguage() {
@@ -633,7 +741,9 @@ function initialize() {
   document.querySelector('[data-current-year]').textContent = String(new Date().getFullYear());
   initializeRevealObserver();
   initializeNavigation();
+  initializeMobileNavigation();
   applyLanguage(detectInitialLanguage(), false);
+  restoreInitialHash();
 
   const languageToggle = document.querySelector('[data-language-toggle]');
   if (languageToggle) {
@@ -643,4 +753,5 @@ function initialize() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', initialize);
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });
+else initialize();
