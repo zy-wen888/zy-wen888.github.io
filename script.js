@@ -225,7 +225,7 @@ const TRANSLATIONS = {
     portraitCaption: 'Researching the intelligence beyond connectivity',
     portraitAlt: 'Portrait of Zhongyi Wen',
     academicHighlights: 'Academic highlights',
-    statWorks: 'verified research works',
+    statWorks: 'research works',
     statFirstAuthor: 'first-author papers',
     statHonors: 'academic honors',
     statPlatform: 'edge RF platform',
